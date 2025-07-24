@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <!-- Starting Point -->
+  
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+     Hi! I am a virtual advisor. I can help you find a job as a computer science graduate! Say " I need help finding a job path" to begin!
+    </template>
+  </category>
+  
+  
+  <category>
+    <pattern>I NEED HELP FINDING A JOB PATH</pattern>
+    <template>
+      I can help! Do you like design, code, data, infrastructure, or protecting systems?
+    </template>
+  </category>
+
+  <!-- Job 1: UI/UX Developer -->
+  <category>
+    <pattern>DESIGN</pattern>
+    <template>
+      You might enjoy being a <b>UI/UX Developer</b>! This is a great choice for a creative! It allows for creating a visual design with user functionality in mind. Salary ranges from 70-80k depending on location. (say goodbye to end)
+    </template>
+  </category>
+
+  <!-- Job 2: Data Analyst -->
+  <category>
+    <pattern>DATA</pattern>
+    <template>
+      You might enjoy being a <b>Data Analyst</b>! This is great for ones that enjoy statistics, pattern recognition and the visualization of data. Salary ranges from 90-100k, depending on location. (say goodbye to end)
+    </template>
+  </category>
+
+  <!-- Job 3: Cybersecurity Analyst -->
+  <category>
+    <pattern>PROTECTING SYSTEMS</pattern>
+    <template>
+      You might enjoy being a <b>Cybersecurity Analyst</b>! This is great for people who enjoy learning about risks and safety in the workplace. Salary can range from 85-100k, depending on location.  (say goodbye to end)
+    </template>
+  </category>
+
+  <!-- Job 4: Software Developer -->
+  <category>
+    <pattern>CODE</pattern>
+    <template>
+      You might enjoy being a <b>Software Developer</b>! This involves loving to code and fixing problems (bugs). Salary ranges from 95-110k. (say goodbye to end)
+    </template>
+  </category>
+
+  <!-- Job 5: DevOps Engineer -->
+  <category>
+    <pattern>INFRASTRUCTURE</pattern>
+    <template>
+      You might enjoy being a <b>DevOps Engineer</b>! This is great for ones interested in automation and development. Salary ranges from 90-120k. (say goodbye to end)
+    </template>
+  </category>
+  
+  
+  <!-- Catch all -->
+  <category>
+    <pattern>*</pattern>
+    <template>
+      Please say "I need help finding a job path" or respond with design, code, data, infrastructure, or protecting systems.
+    </template>
+  </category>
+  
+  
+  <!-- Ending -->
+  
+   <category>
+    <pattern>GOODBYE</pattern>
+    <template>
+      Thank you for your time! If you would like to rate your experience, say thank you
+    </template>
+  </category>
+  
+   <category>
+    <pattern>THANK YOU</pattern>
+    <template>
+      You are welcome! Rate your experience (1 if not satisfied  5 if satisfied).
+    </template>
+  </category>
+  
+  <category>
+    <pattern>1</pattern>
+    <template>
+      I am sorry to hear that!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>5</pattern>
+    <template>
+      I am glad I could help!
+    </template>
+  </category>
+
+</aiml>
